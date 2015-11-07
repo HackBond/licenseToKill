@@ -9,6 +9,13 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var login = require('./routes/login');
 var welcome = require('./routes/welcome');
+var track = require('./routes/track');
+var process2 = require('./routes/process');
+var db = require('./routes/db');
+var hr = require('./routes/hr');
+var hq = require('./routes/hq');
+var decrypt = require('./routes/decrypt');
+var mission = require('./routes/mission');
 
 var app = express();
 
@@ -27,7 +34,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/login', login);
+app.use('/track', track);
 app.use('/welcome', welcome);
+app.use('/process', process2);
+app.use('/db', db);
+app.use('/hr', hr);
+app.use('/hq', hq);
+app.use('/decrypt', decrypt);
+app.use('/mission', mission);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

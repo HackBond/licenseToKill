@@ -7,7 +7,4 @@ router.get('/', function(req, res, next) {
   res.render('welcome', { title: 'Welcome', name: req.query.name });
 });
 
-
-
-
 module.exports = router;
