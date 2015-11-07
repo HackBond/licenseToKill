@@ -5,6 +5,18 @@ block content
     h2(class="c2") #{name}
     a.btn.btn-info(href="/welcome") Back to dashboard
     hr
-    img(src= "images/face.jpg")
-    img(src= "images/face.png")
+    a.btn.btn-info(href="/hq?a=2") Browse
+    hr
+    input(type="text", class="form-control", name="name",value="Peter.jpg")
+    if boo == true
+        img(src= "images/face.png")
+    else
+        hr
+    hr
+    a.btn.btn-info(href="/hq?a=3") Search
+    hr
+    if boo2 == true
+        img(src= "images/face.jpg?")
+    else
+        hr
     hr
