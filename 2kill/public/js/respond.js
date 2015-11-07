@@ -351,4 +351,3 @@
 		w.attachEvent( "onresize", callMedia );
 	}
 })(this);
-

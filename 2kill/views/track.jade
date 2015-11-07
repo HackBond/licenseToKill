@@ -1,5 +1,17 @@
 extends layout
 
 block content
-
-    p(class="c2") Welcome! #{name}
+    h2(class="c2") Tracker Position #{name}
+    a.btn.btn-info(href="/welcome") Back to dashboard
+    hr
+    div.btn-group(role="group")
+      a.btn.btn-info(href="/track?t=1") Tracker 1
+      a.btn.btn-info(href="/track?t=2") Tracker 2
+      a.btn.btn-info(href="/track?t=3") Tracker 3
+    if tno == 1
+        img(src= "images/track.png", class = "fit")
+    else if tno == 2
+        img(src= "images/track2.png", class = "fit")
+    else
+        img(src= "images/track3.png", class = "fit")
+    hr

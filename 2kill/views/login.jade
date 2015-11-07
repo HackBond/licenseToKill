@@ -6,6 +6,7 @@ block content
       margin: 5px auto;
       width: 400px;
     }
+  p #{error}
   form(name="login", action="/login", method="post")
     input(type="text", class="form-control", name="username", placeholder="Agent Codename")
     input(type="password", class="form-control", name="password", placeholder="Agent password")
@@ -13,5 +14,5 @@ block content
       button(type="submit", class='button', style="float:initial") ACCESS
 
 
-    p(class="c2") Access by finger print
-    img(src= "images/fingerPrint.jpeg", class="cente")
+  p(class="c2") Access by finger print
+  img(src= "images/fingerPrint.jpeg", class="cente")

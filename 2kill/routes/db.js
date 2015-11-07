@@ -4,10 +4,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('db', { title: 'Welcome' });
+  res.render('db', { title: 'Scan database', boo: false});
 });
 
-
+router.post('/', function(req, res, next) {
+  res.render('db', { title: 'Scan database', boo: true });
+});
 
 
 module.exports = router;
