@@ -9,9 +9,12 @@ block content
       a.btn.btn-info(href="/track?t=2") Tracker 2
       a.btn.btn-info(href="/track?t=3") Tracker 3
     if tno == 1
+        p(class="c2") Distance: 450m Direction: North West 25 degree
         img(src= "images/track.png", class = "fit")
     else if tno == 2
+        p(class="c2") Distance: 1250m Direction: South West 5 degree
         img(src= "images/track2.png", class = "fit")
     else
+        p(class="c2") Distance: 2000m Direction: North 10 degree
         img(src= "images/track3.png", class = "fit")
     hr
