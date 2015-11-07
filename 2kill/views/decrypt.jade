@@ -2,5 +2,25 @@ extends layout
 
 block content
 
-    p(class="c2") Welcome! #{name}
+
+    p(class="c2")  #{title}
     a.btn.btn-info(href="/welcome") Back to dashboard
+    hr
+    form(name="decrypt", action="/decrypt", method="post")
+      input(type="text", class="form-control", name="name", placeholder="search WiFi")
+      div(style="margin: 0 auto; display: table;")
+        button(type="submit", class='button', style="float:initial") Decrypt
+    hr
+    if boo == true
+      div.ranks
+          table.table
+            thead
+              tr
+                th Password
+            tbody
+              tr
+                td contactHR@blackrock.com
+
+
+    else
+        hr
