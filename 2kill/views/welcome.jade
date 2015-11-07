@@ -1,0 +1,41 @@
+extends layout
+
+block content
+
+    p(class="c2") Welcome! #{name}
+    p Code name: 007
+    img(src= "images/james.jpeg", class="cente")
+    form(name="" action="#" method="post")
+    hr(class="a3")
+    hr(class="a3")
+    hr(class="a3")
+    hr(class="a3")
+    hr(class="a3")
+    hr(class="a3")
+    hr(class="a3")
+    hr(class="a3")
+    hr(class="a3")
+    hr(class="a3")
+    hr(class="a3")
+    hr(class="a3")
+    hr(class="a3")
+    hr(class="a3")
+    <div class="">
+    .list-group
+      a.list-group-item.active( href="/game?level=1" )
+          h4.list-group-item-heading First Level
+          p.list-group-item-text Some thing
+      a.list-group-item( href="/game?level=2" )
+          h4.list-group-item-heading Second Level
+          p.list-group-item-text Some thing
+      a.list-group-item( href="/game?level=3" )
+          h4.list-group-item-heading Third Level
+          p.list-group-item-text Some thing
+      a.list-group-item( href="/game?level=4" )
+          h4.list-group-item-heading Fourth Level
+          p.list-group-item-text Some thing
+      - var list = [{l: 11, h: "head1", d: "dex1"}, {l: 12, h: "head2",d: "dex2"}];
+      each item in list
+        a.list-group-item(href="#")
+          h4.list-group-item-heading #{item.h}
+          p.list-group-item-text #{item.d}
