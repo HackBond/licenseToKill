@@ -2,5 +2,22 @@ extends layout
 
 block content
 
-    p(class="c2") Welcome! #{name}
+    h2(class="c2") #{name}
     a.btn.btn-info(href="/welcome") Back to dashboard
+    hr
+    p Choose a network to exploit
+    <div class="">
+    .list-group
+      a.list-group-item.active(href="#" )
+        p.list-group-item-text Blackrock wifi
+        a.btn.btn-info(href="#") Crack
+      a.list-group-item.active(href="#" )
+        p.list-group-item-text XXX network
+        a.btn.btn-info(href="#") Crack
+      a.list-group-item.active(href="#" )
+        p.list-group-item-text YYY company
+        a.btn.btn-info(href="#") Crack
+      a.list-group-item.active(href="#" )
+        p.list-group-item-text ZZZ channel
+        a.btn.btn-info(href="#") Crack
+    hr

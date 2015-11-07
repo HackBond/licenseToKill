@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('decrypt', { title: 'Welcome' });
+  res.render('decrypt', { title: 'Decrypt password' });
 });
 
 
